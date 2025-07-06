@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Firmino Dev - Criação de sites modernos e acessíveis para seu negócio.">
+  <meta property="og:title" content="Firmino Dev - Criação de sites para seu negócio local">
+  <meta property="og:description" content="Sites modernos e acessíveis para colocar seu comércio na internet.">
+  <meta property="og:image" content="thumbnail.png">
+  <meta name="robots" content="index, follow">
+  <title>Firmino Dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { transition: background-color 0.3s, color 0.3s; }
+    .stats-card i { font-size: 2rem; margin-bottom: 0.5rem; }
+    .whatsapp-float {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25d366; color: white; border-radius: 50%;
+      width: 60px; height: 60px; display: flex;
+      align-items: center; justify-content: center;
+      font-size: 2rem; z-index: 9999; text-decoration: none;
+    }
+    .card {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Firmino Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light ms-3" id="toggleTheme">
+              <i class="bi bi-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <section class="text-center mb-5" data-aos="fade-up">
+      <h1 class="mb-3">Sites modernos, rápidos e acessíveis.</h1>
+      <p class="mb-4">Transformamos suas ideias em experiências digitais reais.</p>
+      <a href="#contato" class="btn btn-primary btn-lg">Solicite um orçamento</a>
+    </section>
+
+    <section id="sobre" class="mb-5 text-center" data-aos="fade-up">
+      <h2 class="mb-4">Sobre Nós</h2>
+      <p>Somos os irmãos Firmino, de João Pessoa - PB, criamos sites simples, eficientes e visualmente atraentes para destacar seu negócio.</p>
+    </section>
+
+    <section id="servicos" class="mb-5">
+      <h2 class="mb-4 text-center" data-aos="fade-up">O que oferecemos</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 bg-secondary text-light text-center">
+            <div class="card-body">
+              <i class="bi bi-globe"></i>
+              <h5 class="card-title mt-3">Sites Institucionais</h5>
+              <p class="card-text">Apresente sua empresa com credibilidade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 bg-secondary text-light text-center">
+            <div class="card-body">
+              <i class="bi bi-bullseye"></i>
+              <h5 class="card-title mt-3">Landing Pages</h5>
+              <p class="card-text">Capte clientes e gere conversões.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 bg-secondary text-light text-center">
+            <div class="card-body">
+              <i class="bi bi-image"></i>
+              <h5 class="card-title mt-3">Portfólios</h5>
+              <p class="card-text">Mostre seus trabalhos com estilo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 bg-secondary text-light text-center">
+            <div class="card-body">
+              <i class="bi bi-phone"></i>
+              <h5 class="card-title mt-3">Design Responsivo</h5>
+              <p class="card-text">Funciona em qualquer dispositivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="mb-5">
+      <h2 class="mb-4 text-center" data-aos="fade-up">Portfólio</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 border border-light text-center">
+            <img src="/src/img/china_ovos.png" class="card-img-top" alt="China Ovos" loading="lazy">
+            <div class="card-body text-light" style="background-color: #c05112;">
+              <h5 class="card-title">China Ovos</h5>
+              <p class="card-text">Site para comércio de ovos e produtos do sertão, com pedidos via WhatsApp.</p>
+              <a href="#" target="_blank" class="btn btn-outline-light">Ver site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 border border-light text-center">
+            <img src="./img/Bella_Modas_1024x1024.png" class="card-img-top" alt="Bella Moda" loading="lazy">
+            <div class="card-body text-light" style="background-color: #b8946f;">
+              <h5 class="card-title">Bella Moda</h5>
+              <p class="card-text">Loja de roupas feminina com catálogo e Instagram Shopping.</p>
+              <a href="#" target="_blank" class="btn btn-outline-light">Ver site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 border border-light text-center">
+            <img src="./img/Neide Confeita.png" class="card-img-top" alt="Neide Confeita" loading="lazy">
+            <div class="card-body text-dark" style="background-color: #fbc6ce;">
+              <h5 class="card-title">Neide Confeita</h5>
+              <p class="card-text">Confeitaria especializada na confecção de bolos e doces. Agendamento via WhatsApp.</p>
+              <a href="#" target="_blank" class="btn btn-outline-dark">Ver site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque" class="py-5 text-center" data-aos="fade-up">
+      <h2 class="mb-4">Por que escolher a Firmino Dev?</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up"><i class="bi bi-currency-dollar display-5 mb-3"></i><h5>Preços Justos</h5><p>Sites profissionais por um investimento acessível.</p></div>
+        <div class="col-md-4" data-aos="fade-up"><i class="bi bi-lightning-charge display-5 mb-3"></i><h5>Entrega Rápida</h5><p>Seu site pronto em média 5 dias.</p></div>
+        <div class="col-md-4" data-aos="fade-up"><i class="bi bi-heart display-5 mb-3"></i><h5>Atendimento Humanizado</h5><p>De João Pessoa, conhecemos o comércio local.</p></div>
+      </div>
+      <a href="#contato" class="btn btn-primary mt-4">Solicite seu orçamento</a>
+    </section>
+
+    <section id="contato" class="text-center mb-5" data-aos="fade-up">
+      <h2 class="mb-4">Entre em contato</h2>
+      <p>Nos chame no WhatsApp e comece seu projeto hoje mesmo!</p>
+      <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn btn-primary btn-lg">Fale Conosco</a>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p>© 2025 Firmino Dev | João Pessoa - PB</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
