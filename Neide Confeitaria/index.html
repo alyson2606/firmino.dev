@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neide Confeita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/logo.jpg" alt="Logo Neide Confeita">
+        <h1>Neide Confeita</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre nós</h2>
+        <p>Bem-vindo à Neide Confeita! Somos apaixonados por criar os melhores doces e bolos para tornar os seus
+            momentos especiais ainda mais deliciosos.</p>
+        <a href="https://api.whatsapp.com/send?phone=5583993911906&text=Ol%C3%A1,%20gostaria%20de%20realizar%20um%20pedido!"
+            target="_blank"><button class="btn-faca-pedido">Faça seu pedido</button></a>
+    </section>
+
+    <section>
+        <h2>Nossos produtos</h2>
+        <div id="produtos">
+            <!----------------------------------------------------- Bolo decorado ----------------------------------------------------->
+            <div class="produto">
+                <div class="bolo-decorado carousel">
+                    <img class="slide" src="./img/bolo-decorado.jpeg" alt="Bolo Decorado 1">
+                    <img class="slide" src="./img/bolo-decorado-2.jpeg" alt="Bolo Decorado 2">
+                    <img class="slide" src="./img/bolo-decorado-3.jpeg" alt="Bolo Decorado 3">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Bolo Decorado</h3>
+                <p>Deliciosos bolos decorados para todas as ocasiões!</p>
+            </div>
+
+            <!----------------------------------------------------- Cupcake ----------------------------------------------------->
+            <div class="produto">
+                <div class="cupcake carousel">
+                    <img class="slide" src="./img/cupcake.jpeg" alt="Cupcake 1">
+                    <img class="slide" src="./img/cupcake-2.jpg" alt="Cupcake 2">
+                    <img class="slide" src="./img/cupcake-3.jpg" alt="Cupcake 3">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Cupcake</h3>
+                <p>Pequenos bolinhos de sabor irresistível!</p>
+            </div>
+
+            <!---------------------------------------------------- Docinhos --------------------------------------------------------------->
+            <div class="produto">
+                <div class="docinhos carousel">
+                    <img class="slide" src="./img/docinhos-3.jpeg" alt="Docinhos 3">
+                    <img class="slide" src="./img/docinhos.jpeg" alt="Docinhos 1">
+                    <img class="slide" src="./img/docinhos-2.jpeg" alt="Docinhos 2">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Docinhos</h3>
+                <p>Deliciosos doces para adoçar seu dia!</p>
+                <button class="btn-docinhos">Ver Sabores</button>
+            </div>
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Sabores de Docinhos Disponíveis</h2>
+                    <p>Aqui estão alguns dos nossos deliciosos sabores de docinhos:</p>
+                    <ul>
+                        <li>Brigadeiro</li>
+                        <li>Beijinho</li>
+                        <li>Doce de Leite</li>
+                        <li>Ninho com Nutela</li>
+                    </ul>
+                </div>
+            </div>
+            <!---------------------------------------------------- Docinhos Finos --------------------------------------------------------------->
+            <div class="produto">
+                <div class="docinhos carousel">
+                    <img class="slide" src="./img/doces-finos-1.jpg" alt="Docinhos 1">
+                    <img class="slide" src="./img/doces-finos-2.jpg" alt="Docinhos 2">
+                    <img class="slide" src="./img/doces-finos-3.jpg" alt="Docinhos 3">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Doces Finos</h3>
+                <p>Elegância e sabor que tornam qualquer ocasião única!</p>
+                <button class="btn-docinhos">Ver Sabores</button>
+            </div>
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Sabores de Docinhos Disponíveis</h2>
+                    <p>Aqui estão alguns dos nossos deliciosos sabores:</p>
+                    <ul>
+                        <li>Tâmara com chocolate</li>
+                        <li>Cestinha de Maracujá</li>
+                        <li>Cestinha com Recheio de Cereja</li>
+                        <li>Bombom de Nozes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!----------------------------------------------------- Bolo Vulcão ----------------------------------------------------->
+            <div class="produto">
+                <div class="bolo-vulcao carousel">
+                    <img class="slide" src="./img/bolo-vulcao.jpeg" alt="Bolo Vulcão 1">
+                    <img class="slide" src="./img/bolo-vulcao-gourmet.jpeg" alt="Bolo Vulcão 2">
+                    <img class="slide" src="./img/bolo-vulcao-gourmet-2.jpeg" alt="Bolo Vulcão 3">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Bolo Vulcão</h3>
+                <p>Uma explosão de sabor em cada fatia!</p>
+            </div>
+
+            <!----------------------------------------------------- Bem casados ----------------------------------------------------->
+            <div class="produto">
+                <div class="bem-casados carousel">
+                    <img class="bem-casados carousel" src="./img/bem-casado.jpeg" alt="Bem Casados 1">
+                </div>
+                <h3>Bem Casados</h3>
+                <p>Delicados bem casados para celebrar momentos especiais!</p>
+            </div>
+
+            <!----------------------------------------------------- Torta de Chocolate ----------------------------------------------------->
+            <div class="produto">
+                <div class="torta-chocolate carousel">
+                    <img class="slide" src="./img/torta-chocolate.jpeg" alt="Torta de Chocolate 1">
+                    <img class="slide" src="./img/torta-chocolate-2.jpeg" alt="Torta de Chocolate 2">
+                    <img class="slide" src="./img/torta-chocolate-3.jpeg" alt="Torta de Chocolate 3">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Torta de Chocolate</h3>
+                <p>Uma torta irresistível para os amantes de chocolate!</p>
+            </div>
+
+            <!----------------------------------------------------- Kit Festa ----------------------------------------------------->
+            <div class="produto">
+                <div class="kit-festa carousel">
+                    <img class="slide" src="./img/kit-festa.jpeg" alt="Kit Festa 1">
+                    <img class="slide" src="./img/kit-festa-2.jpeg" alt="Kit Festa 2">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <h3>Kit Festa</h3>
+                <p>Um kit completo com bolo, docinhos e trufas para sua festa!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Entre em contato</h2>
+        <div class="redes-sociais">
+            <a href="https://api.whatsapp.com/send?phone=5583993911906&text=Ol%C3%A1,%20gostaria%20de%20realizar%20um%20pedido!"
+                target="_blank">
+                <img src="./img/whatsapp.png" alt="WhatsApp" width="50" height="50">
+            </a>
+            <a href="https://www.instagram.com/neide.confeita/" target="_blank">
+                <img src="./img/instagram.png" alt="Instagram" width="50" height="50">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Neide Confeita. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

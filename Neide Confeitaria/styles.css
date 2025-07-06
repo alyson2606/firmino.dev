@@ -1,0 +1,266 @@
+header {
+    background: linear-gradient(to bottom, #f8bbd0, #ffffff);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f6eaef);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.logo {
+    width: 180px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    /* Isso mantém a proporção da imagem */
+    border-radius: 50%;
+    /* float: left;*/
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #d93687;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d93687;
+
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #e05e9f;
+}
+
+#sobre{
+    padding: 7px;
+}
+
+.btn-faca-pedido {
+    background-color: #d93687;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-faca-pedido:hover{
+    background-color: #e05e9f;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    flex: 1 1 280px; /* Cresce e diminui, largura mínima 280px */
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.produto .carousel {
+    width: 100%;
+    /* Garante que o carrossel ocupe toda a largura do produto */
+    height: 400px;
+    /*Define uma altura fixa para as imagens */
+    overflow: hidden;
+    /* Esconde qualquer conteúdo extra que exceda a altura */
+}
+
+.produto .slide {
+    width: 100%;
+    /* Garante que as imagens dos slides ocupem toda a largura do carrossel */
+    height: 100%;
+    /* Garante que as imagens tenham a mesma altura que o carrossel */
+    object-fit: cover;
+    /* Corta ou estica as imagens para se ajustarem ao contêiner */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    /* Esconde as imagens fora da área visível */
+    max-width: 300px;
+    /* Define um tamanho máximo para o carrossel */
+    margin: 0 auto;
+    /* Centraliza o carrossel horizontalmente */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    /* Ocupa toda a largura do carrossel */
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.prev {
+    left: 10px;
+    /* Distância da margem esquerda */
+}
+
+.next {
+    right: 10px;
+    /* Distância da margem direita */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.trufas-slide,
+.bem-casados-slide {
+    width: 100%;
+    /* Ajusta a largura da imagem para preencher o contêiner */
+}
+
+.produto h3 {
+    color: #e05e9f;
+}
+
+.produto p {
+    color: #000;
+}
+
+/* ------------------------------------------------------- DOCINHOS ------------------------------------------------------------*/
+/* Estilos para o botão docinhos */
+.btn-docinhos {
+    background-color: #d93687;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.btn-docinhos:hover {
+    background-color: #c51d6a;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* Estilos para o modal */
+.modal {
+    display: none;
+    /* Oculta o modal por padrão */
+    position: fixed;
+    /* Permanece fixo mesmo se a página for rolada */
+    z-index: 1;
+    /* Define a pilha de ordem para garantir que o modal esteja acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Adiciona rolagem se o conteúdo do modal for longo */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fundo escuro semi-transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Centraliza o modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Largura do modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------- DOCINHOS ------------------------------------------------------------*/
+.contato h2 {
+    font-size: 36px;
+    color: #d07fa3
+}
+
+.contato .redes-sociais {
+    padding: 1rem 0;
+}
+
+.contato .redes-sociais img {
+    margin: 0.3rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.contato .redes-sociais img:hover {
+    background-color: #FFB6C1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
