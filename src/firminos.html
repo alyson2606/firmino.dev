@@ -30,12 +30,21 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       transform: scale(1.02);
     }
+    .logo{
+      width: 150px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    /* Isso mantém a proporção da imagem */
+    border-radius: 40%;
+    /* float: left;*/
+    }
   </style>
 </head>
 <body class="bg-dark text-light">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Firmino Dev</a>
+      <!-- a class="navbar-brand" href="#">Firmino Dev</a> -->
+      <img class="logo" src="./img/logo.png" alt="Logo Firmino.Dev">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,6 +53,7 @@
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#porque">Por que escolher</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
           <li class="nav-item">
             <button class="btn btn-outline-light ms-3" id="toggleTheme">
@@ -114,7 +124,7 @@
       <div class="row g-4">
         <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border border-light text-center">
-            <img src="/src/img/china_ovos.png" class="card-img-top" alt="China Ovos" loading="lazy">
+            <img src="img/china_ovos.png" class="card-img-top" alt="China Ovos" loading="lazy">
             <div class="card-body text-light" style="background-color: #c05112;">
               <h5 class="card-title">China Ovos</h5>
               <p class="card-text">Site para comércio de ovos e produtos do sertão, com pedidos via WhatsApp.</p>
@@ -124,7 +134,7 @@
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border border-light text-center">
-            <img src="./img/Bella_Modas_1024x1024.png" class="card-img-top" alt="Bella Moda" loading="lazy">
+            <img src="img/Bella_Modas_1024x1024.png" class="card-img-top" alt="Bella Moda" loading="lazy">
             <div class="card-body text-light" style="background-color: #b8946f;">
               <h5 class="card-title">Bella Moda</h5>
               <p class="card-text">Loja de roupas feminina com catálogo e Instagram Shopping.</p>
@@ -134,11 +144,11 @@
         </div>
         <div class="col-md-4" data-aos="fade-up">
           <div class="card h-100 border border-light text-center">
-            <img src="./img/Neide Confeita.png" class="card-img-top" alt="Neide Confeita" loading="lazy">
+            <img src="img/Neide Confeita.png" class="card-img-top" alt="Neide Confeita" loading="lazy">
             <div class="card-body text-dark" style="background-color: #fbc6ce;">
               <h5 class="card-title">Neide Confeita</h5>
               <p class="card-text">Confeitaria especializada na confecção de bolos e doces. Agendamento via WhatsApp.</p>
-              <a href="#" target="_blank" class="btn btn-outline-dark">Ver site</a>
+              <a href="#" target="_blank" class="btn btn-outline-light">Ver site</a>
             </div>
           </div>
         </div>
