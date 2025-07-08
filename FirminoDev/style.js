@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const html = document.documentElement;
     const currentTheme = html.getAttribute('data-bs-theme');
     const icon = toggleBtn.querySelector('i');
-    const nav = document.querySelector('nav');
+    const nav = document.querySelector('navbarNav');
     const footer = document.querySelector('footer');
 
     if (currentTheme === 'dark') {
