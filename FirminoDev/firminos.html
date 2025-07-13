@@ -3,19 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Firmino Dev - Criação de sites modernos e acessíveis para seu negócio.">
-  <meta property="og:title" content="Firmino Dev - Criação de sites para seu negócio local">
-  <meta property="og:description" content="Sites modernos e acessíveis para colocar seu comércio na internet.">
-  <meta property="og:image" content="thumbnail.png">
+  <meta name="description" content="Firmino Dev cria sites modernos e acessíveis para destacar o comércio local de João Pessoa. Peça seu orçamento e venda mais!">
+
+  <title>Firmino Dev - Criação de Sites em João Pessoa para Pequenos Negócios</title>
+
+  <!-- SEO básico -->
+  <link rel="canonical" href="https://www.SEUSITE.com.br" />
   <meta name="robots" content="index, follow">
-  <title>Firmino Dev</title>
+
+  <!-- Open Graph para Facebook e LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Firmino Dev - Sites para o comércio local de João Pessoa">
+  <meta property="og:description" content="Criamos sites rápidos, modernos e que vendem para pequenos negócios em João Pessoa.">
+  <meta property="og:image" content="https://www.SEUSITE.com.br/img/SEU_LOGO.png">
+  <meta property="og:url" content="https://www.SEUSITE.com.br">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Firmino Dev - Sites para negócios locais">
+  <meta name="twitter:description" content="Sites acessíveis e personalizados para destacar seu comércio em João Pessoa.">
+  <meta name="twitter:image" content="https://www.SEUSITE.com.br/img/SEU_LOGO.png">
+
+  <!-- Schema.org (JSON-LD) para Local Business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Firmino Dev",
+      "description": "Criação de sites modernos em João Pessoa para pequenos negócios.",
+      "url": "https://www.SEUSITE.com.br",
+      "logo": "https://www.SEUSITE.com.br/img/SEU_LOGO.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "João Pessoa",
+        "addressRegion": "PB",
+        "addressCountry": "BR"
+      },
+      "image": "https://www.SEUSITE.com.br/img/SEU_LOGO.png",
+      "areaServed": "João Pessoa"
+    }
+  </script>
+
+  <!-- CSS e Libs -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="style.js"></script>
-  <style>
+  
+  <!-- Performance extra -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="style.js" defer></script>
+
+   <style>
     body { transition: background-color 0.3s, color 0.3s; }
     .stats-card i { font-size: 2rem; margin-bottom: 0.5rem; }
     .whatsapp-float {
@@ -61,6 +103,7 @@
 
   </style>
 </head>
+
 <body class="bg-dark text-light">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
@@ -69,19 +112,22 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#servicos">Serviços</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#portfolio">Portfólio</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
-          
-            <button class="btn btn-outline-light ms-3" id="toggleTheme">
-              <i class="bi bi-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre</a></li>
+    <li class="nav-item"><a class="nav-link text-light" href="#servicos">Serviços</a></li>
+    <li class="nav-item"><a class="nav-link text-light" href="#portfolio">Portfólio</a></li>
+    <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
+    <li>
+      <button class="btn btn-outline-light ms-3" id="toggleTheme">
+        <i class="bi bi-moon"></i>
+      </button>
+    </li>
+  </ul>
+  <!-- Botão extra visível só no mobile -->
+  <button class="btn btn-outline-light mt-3 d-lg-none" id="closeMenu">Fechar Menu</button>
+</div>
+
     </div>
   </nav>
 
@@ -200,8 +246,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
 </body>
 </html>
