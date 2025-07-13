@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Firmino Dev cria sites modernos e acessíveis para destacar o comércio local de João Pessoa. Peça seu orçamento e venda mais!">
+  <meta name="description"
+    content="Firmino Dev cria sites modernos e acessíveis para destacar o comércio local de João Pessoa. Peça seu orçamento e venda mais!">
 
   <title>Firmino Dev - Criação de Sites em João Pessoa para Pequenos Negócios</title>
 
@@ -15,14 +16,16 @@
   <!-- Open Graph para Facebook e LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Firmino Dev - Sites para o comércio local de João Pessoa">
-  <meta property="og:description" content="Criamos sites rápidos, modernos e que vendem para pequenos negócios em João Pessoa.">
+  <meta property="og:description"
+    content="Criamos sites rápidos, modernos e que vendem para pequenos negócios em João Pessoa.">
   <meta property="og:image" content="https://www.SEUSITE.com.br/img/SEU_LOGO.png">
   <meta property="og:url" content="https://www.SEUSITE.com.br">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Firmino Dev - Sites para negócios locais">
-  <meta name="twitter:description" content="Sites acessíveis e personalizados para destacar seu comércio em João Pessoa.">
+  <meta name="twitter:description"
+    content="Sites acessíveis e personalizados para destacar seu comércio em João Pessoa.">
   <meta name="twitter:image" content="https://www.SEUSITE.com.br/img/SEU_LOGO.png">
 
   <!-- Schema.org (JSON-LD) para Local Business -->
@@ -49,15 +52,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<<<<<<< HEAD
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="style.js"></script>
-  <style>
-    body {
-      transition: background-color 0.3s, color 0.3s;
-=======
-  
+
   <!-- Performance extra -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
@@ -66,16 +61,9 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
   <script src="style.js" defer></script>
 
-   <style>
-    body { transition: background-color 0.3s, color 0.3s; }
-    .stats-card i { font-size: 2rem; margin-bottom: 0.5rem; }
-    .whatsapp-float {
-      position: fixed; bottom: 20px; right: 20px;
-      background: #25d366; color: white; border-radius: 50%;
-      width: 60px; height: 60px; display: flex;
-      align-items: center; justify-content: center;
-      font-size: 2rem; z-index: 9999; text-decoration: none;
->>>>>>> 3bbdadc8370cd155a978e2131644455ec430b81e
+  <style>
+    body {
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .stats-card i {
@@ -147,38 +135,22 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-<<<<<<< HEAD
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto ">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="#servicos">Serviços</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="#portfolio">Portfólio</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
-
-          <button class="btn btn-outline-light ms-3" id="toggleTheme">
-            <i class="bi bi-moon"></i>
-          </button>
+          <li>
+            <button class="btn btn-outline-light ms-3" id="toggleTheme">
+              <i class="bi bi-moon"></i>
+            </button>
           </li>
         </ul>
+        <!-- Botão extra visível só no mobile -->
+        <button class="btn btn-outline-light mt-3 d-lg-none" id="closeMenu">Fechar Menu</button>
       </div>
-=======
-        <div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item"><a class="nav-link text-light" href="#sobre">Sobre</a></li>
-    <li class="nav-item"><a class="nav-link text-light" href="#servicos">Serviços</a></li>
-    <li class="nav-item"><a class="nav-link text-light" href="#portfolio">Portfólio</a></li>
-    <li class="nav-item"><a class="nav-link text-light" href="#contato">Contato</a></li>
-    <li>
-      <button class="btn btn-outline-light ms-3" id="toggleTheme">
-        <i class="bi bi-moon"></i>
-      </button>
-    </li>
-  </ul>
-  <!-- Botão extra visível só no mobile -->
-  <button class="btn btn-outline-light mt-3 d-lg-none" id="closeMenu">Fechar Menu</button>
-</div>
 
->>>>>>> 3bbdadc8370cd155a978e2131644455ec430b81e
     </div>
   </nav>
 
@@ -290,14 +262,13 @@
           <p>De João Pessoa, conhecemos o comércio local.</p>
         </div>
       </div>
-      <!-- <a href="#contato" class="btn btn-primary mt-4">Solicite seu orçamento</a> -->
+      <a href="#contato" class="btn btn-primary mt-4">Solicite seu orçamento</a>
     </section>
 
     <section id="contato" class="text-center mb-5" data-aos="fade-up">
       <h2 class="mb-4">Entre em contato</h2>
       <p>Nos chame no WhatsApp e comece seu projeto hoje mesmo!</p>
-      <a href="https://wa.me/5583987621016?text=Oi,%20tudo%20bem?%20Me%20interessei%20muito%20pelo%20seu%20serviço%20e%20quero%20saber%20mais!%20"
-        target="_blank" class="btn btn-primary btn-lg">Fale Conosco</a>
+      <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btn btn-primary btn-lg">Fale Conosco</a>
     </section>
   </main>
 
@@ -309,7 +280,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
- 
+
 </body>
 
 </html>

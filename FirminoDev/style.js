@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.replace('bi-moon', 'bi-sun');
         }
     }
-<<<<<<< HEAD
-  });
-=======
 
     // Set initial theme and icon based on data-bs-theme
     setTheme(html.getAttribute('data-bs-theme'));
@@ -42,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-        link.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
             var navbarCollapse = document.getElementById('navbarNav');
             if (window.innerWidth < 992 && navbarCollapse.classList.contains('show')) {
                 var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
@@ -55,11 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var closeMenuBtn = document.getElementById('closeMenu');
     if (closeMenuBtn) {
-        closeMenuBtn.addEventListener('click', function() {
+        closeMenuBtn.addEventListener('click', function () {
             var navbarCollapse = document.getElementById('navbarNav');
             var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
             bsCollapse.hide();
         });
     }
->>>>>>> 3bbdadc8370cd155a978e2131644455ec430b81e
 });
