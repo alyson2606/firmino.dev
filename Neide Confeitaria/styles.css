@@ -2,31 +2,33 @@ header {
     background: linear-gradient(to bottom, #f8bbd0, #ffffff);
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #f6eaef);
+    background: linear-gradient(to bottom, #ffffff, #fce4ec);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
 }
 
 .logo {
     width: 180px;
-    /* Ajuste o tamanho conforme necessário */
     height: auto;
-    /* Isso mantém a proporção da imagem */
     border-radius: 50%;
-    /* float: left;*/
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 h1 {
-    margin: 0;
+    margin: 10px 0;
     font-size: 36px;
     color: #d93687;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -44,12 +46,12 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav ul li a:hover {
     color: #d93687;
-
+    border-bottom: 2px solid #d93687;
 }
 
 section {
@@ -59,75 +61,79 @@ section {
 
 section h2 {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 32px;
     color: #e05e9f;
 }
 
-#sobre{
+#sobre {
     padding: 7px;
 }
 
-.btn-faca-pedido {
+.btn-faca-pedido,
+.btn-docinhos {
     background-color: #d93687;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-.btn-faca-pedido:hover{
+.btn-faca-pedido:hover,
+.btn-docinhos:hover {
     background-color: #e05e9f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #produtos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
 }
 
 .produto {
-    flex: 1 1 280px; /* Cresce e diminui, largura mínima 280px */
+    flex: 1 1 280px;
     max-width: 300px;
     box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .produto .carousel {
     width: 100%;
-    /* Garante que o carrossel ocupe toda a largura do produto */
     height: 400px;
-    /*Define uma altura fixa para as imagens */
     overflow: hidden;
-    /* Esconde qualquer conteúdo extra que exceda a altura */
 }
 
 .produto .slide {
     width: 100%;
-    /* Garante que as imagens dos slides ocupem toda a largura do carrossel */
     height: 100%;
-    /* Garante que as imagens tenham a mesma altura que o carrossel */
     object-fit: cover;
-    /* Corta ou estica as imagens para se ajustarem ao contêiner */
 }
 
 .carousel {
     position: relative;
-    overflow: hidden;
-    /* Esconde as imagens fora da área visível */
     max-width: 300px;
-    /* Define um tamanho máximo para o carrossel */
     margin: 0 auto;
-    /* Centraliza o carrossel horizontalmente */
 }
 
 .slide {
     display: none;
     width: 100%;
-    /* Ocupa toda a largura do carrossel */
     height: auto;
 }
 
@@ -137,89 +143,65 @@ section h2 {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    padding: 16px;
+    padding: 12px;
     color: white;
-    font-size: 20px;
-    transition: background-color 0.3s;
-}
-
-.prev {
-    left: 10px;
-    /* Distância da margem esquerda */
-}
-
-.next {
-    right: 10px;
-    /* Distância da margem direita */
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 50%;
+    transition: all 0.4s ease;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.178);
+    transform: translateY(-50%) scale(1.15);
 }
 
-.trufas-slide,
-.bem-casados-slide {
-    width: 100%;
-    /* Ajusta a largura da imagem para preencher o contêiner */
-}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 
 .produto h3 {
     color: #e05e9f;
+    margin-top: 15px;
 }
 
 .produto p {
-    color: #000;
+    color: #555;
+    padding: 0 10px 15px;
+    font-size: 16px;
 }
 
-/* ------------------------------------------------------- DOCINHOS ------------------------------------------------------------*/
-/* Estilos para o botão docinhos */
-.btn-docinhos {
-    background-color: #d93687;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease-in-out;
-    margin-bottom: 20px;
-}
-
-.btn-docinhos:hover {
-    background-color: #c51d6a;
-}
-/* ---------------------------------------------------------------------------------------------- */
-/* Estilos para o modal */
+/* -------------------- Modal --------------------- */
 .modal {
     display: none;
-    /* Oculta o modal por padrão */
     position: fixed;
-    /* Permanece fixo mesmo se a página for rolada */
-    z-index: 1;
-    /* Define a pilha de ordem para garantir que o modal esteja acima de outros elementos */
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* Adiciona rolagem se o conteúdo do modal for longo */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Fundo escuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* Centraliza o modal verticalmente */
-    padding: 20px;
-    border: 1px solid #888;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
     width: 80%;
-    /* Largura do modal */
+    max-width: 600px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .close {
-    color: #aaa;
+    color: #888;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -227,15 +209,14 @@ section h2 {
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
+    color: #d93687;
     cursor: pointer;
 }
 
-/* ------------------------------------------------------- DOCINHOS ------------------------------------------------------------*/
+/* -------------------- Contato ------------------- */
 .contato h2 {
     font-size: 36px;
-    color: #d07fa3
+    color: #d07fa3;
 }
 
 .contato .redes-sociais {
@@ -246,12 +227,16 @@ section h2 {
     margin: 0.3rem;
     cursor: pointer;
     padding: 1rem;
+    border-radius: 35%;
+    transition: all 0.3s;
 }
 
 .contato .redes-sociais img:hover {
     background-color: #FFB6C1;
+    transform: scale(1.1);
 }
 
+/* --------------------- Footer ------------------- */
 footer {
     background-color: #333;
     color: #fff;
@@ -263,4 +248,3 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
-
